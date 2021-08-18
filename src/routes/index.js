@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
 
 router.post('/add', async (req, res, next) => {
   const { NombreMascota, edad } = req.body;
+  console.log("puto");
   if (NombreMascota && edad) {
     const pet = new Pet(req.body);
     await Pet.collection.insertOne(pet);
