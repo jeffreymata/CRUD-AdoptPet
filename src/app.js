@@ -12,6 +12,9 @@ mongoose.connect('mongodb://localhost/AdoptPet')
 
 // importing routes
 const indexRoutes = require('./routes/index');
+const adoptRoutes = require('./routes/adopcion');
+const userRoutes = require('./routes/usuario');
+const donacionRoutes = require('./routes/donacion');
 
 // settings
 app.set('port', process.env.PORT || 3000);
@@ -23,7 +26,9 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}))
 // routes
 app.use('/', indexRoutes);
-
+app.use('/adopcion', adoptRoutes);
+app.use('/usuario', userRoutes);
+app.use('/donacion', donacionRoutes);
 
 app.listen(app.get('port'), () => {
   console.log(`server on port ${app.get('port')}`);

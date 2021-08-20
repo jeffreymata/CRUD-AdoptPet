@@ -9,11 +9,11 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark mb-4">
-      <a class="navbar-brand" href="/">Mascotas</a>
-      <a class="navbar-brand" href="#">Organizacion</a>
-      <a class="navbar-brand" href="/adopcion">Adoptar</a>
-      <a class="navbar-brand" href="/donacion">Donacion</a>
-      <a class="navbar-brand" href="/usuario">Usuarios</a>
+        <a class="navbar-brand" href="/">Mascotas</a>
+        <a class="navbar-brand" href="#">Organizacion</a>
+        <a class="navbar-brand" href="/adopcion">Adoptar</a>
+        <a class="navbar-brand" href="/donacion">Donacion</a>
+        <a class="navbar-brand" href="/usuario">Usuarios</a>
     </nav>
 
 
@@ -24,15 +24,36 @@
     <div class="col-md-5">
       <div class="card">
         <div class="card-body">
-          <form action="/add" method="post">
+          <form action="/donacion/add" method="post">
             <div class="form-group">
-              <input class="form-control" type="text" name="NombreMascota" placeholder="Ingrese Nombre de Mascota">
+              <input class="form-control" type="text" name="nombreDonante" placeholder="Nombre del solicitante">
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="description" cols="80"
-                placeholder="Ingrese Descripcion"
-                ></textarea>
+                <textarea class="form-control" name="motivo" cols="80"
+                  placeholder="Motivo de la donacion"
+                  ></textarea>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="NombreMascota" placeholder="Ingrese Nombre de Mascota">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="description" cols="80"
+                  placeholder="Ingrese Descripcion"
+                  ></textarea>
+              </div>
+            
+            <div class="form-group">
+              <input class="form-control" type="text" name="edad" placeholder="Edad">
             </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="raza" placeholder="Raza">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="tamanio" placeholder="Tamaño">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="peso" placeholder="peso">
+              </div>
             <button class="btn btn-primary" type="submit">
               Add
             </button>
@@ -41,14 +62,14 @@
       </div>
     </div>
 
-    <!-- LIST -->
+    <!-- LIST 
     <div class="col-md-7">
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
             <th>N°</th>
             <th>Nombre</th>
-            <th>Descripcion</th>
+            <th>nombre de mascota</th>
             <th>Operations</th>
           </tr>
         </thead>
@@ -76,6 +97,7 @@
       </table>
 
     </div>
+    -->
   </div>
 
 </div>

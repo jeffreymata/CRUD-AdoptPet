@@ -24,13 +24,33 @@
     <div class="col-md-5">
       <div class="card">
         <div class="card-body">
-          <form action="/add" method="post">
+          <form action="/adopcion/add" method="post">
             <div class="form-group">
-              <input class="form-control" type="text" name="NombreMascota" placeholder="Ingrese Nombre de Mascota">
+              <input class="form-control" type="text" name="nombreSolicitante" placeholder="Nombre del solicitante">
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="description" cols="80"
-                placeholder="Ingrese Descripcion"
+              <input class="form-control" type="text" name="telefono" placeholder="Numero de Telefono">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="correo" placeholder="Correo Electronico">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="nombreMacota" placeholder="Nombre de la mascota">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="edad" placeholder="Edad">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="raza" placeholder="Raza">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="Motivo" cols="80"
+                placeholder="Motivo de adopcion"
+                ></textarea>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="domicilio" cols="80"
+                placeholder="Domicilio del solicitante"
                 ></textarea>
             </div>
             <button class="btn btn-primary" type="submit">
@@ -41,14 +61,14 @@
       </div>
     </div>
 
-    <!-- LIST -->
+    <!-- LIST 
     <div class="col-md-7">
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
             <th>N°</th>
             <th>Nombre</th>
-            <th>Descripcion</th>
+            <th>nombre de mascota</th>
             <th>Operations</th>
           </tr>
         </thead>
@@ -76,6 +96,7 @@
       </table>
 
     </div>
+    -->
   </div>
 
 </div>
