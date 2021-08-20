@@ -13,9 +13,9 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "express-generator": "^4.16.1",
     "mongoose": "^5.13.7",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "generate-schema": "2.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
