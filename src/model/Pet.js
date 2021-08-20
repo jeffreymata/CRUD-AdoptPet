@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Pet = Schema({
+const PetSchema = Schema({
   Organization: {
     Name: String,
     Address: {
@@ -24,4 +24,5 @@ const Pet = Schema({
 });
 
 
-module.exports = mongoose.model('Pets', Pet);
+const Pet = module.exports = mongoose.model('Pets', PetSchema);
+
